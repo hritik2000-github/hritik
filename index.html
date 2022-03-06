@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+        <div class="navbar">
+            <nav>
+   <ul id="menuList">     
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+       
+
+    </ul>
+    
+</nav>
+
+<img src="menu-icon.png" class="menu-icon" onclick="togglemenu()">
+
+</div>
+
+<section class="cont" id="home">
+    <div class="cont-content">
+        <img src="hr.png" class="image" >
+   <div class="txt1"><h3>Hello,I am</h3></div> 
+    <div class="txt2"><h1>HRITIK <span> RANJAN</span></h1></div>
+    <div class="txt3"><p>This is my official portfolio website showcasing my skills and achievements</p></div>
+ <div class="btn"><a href="#contact">Contact Now</a></div>
+   
+</div>
+
+</div>
+<div class="aboutme" id="about">
+<h2>About Me</h2>
+<div class="column left">
+<img src="h.png">
+</div>
+<div class="column right">
+<p>Hi,I am <span>HRITIK RANJAN</span>.I am a second year undergrad persuing Btech in Electronics and Communication Engineering at Indian Institute of Information Technology, Bhagalpur.
+<br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque eos delectus porro corporis quaerat dolores, quibusdam laborum excepturi. Molestiae sequi qui aspernatur dicta eaque perferendis numquam fugit deleniti dolorum?
+</p>
+<div class="btn2"><a href="#">Download CV</a></div>
+</div>
+</div>
+
+<section class="skills" id="skills">
+        <h2>My Skills</h2>
+        <div class="max-width">
+            
+            <div class="skills-content">
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+       
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="max-width">
+            
+           
+                </div>
+                <div class="column">
+                   
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+   
+
+
+
+    </header>
+   
+    <footer>
+        <span>Copyright <span>&copy</span><a>Hritik</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+    </footer>
+
+<script>
+    var menuList = document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+
+    function togglemenu(){
+        if(menuList.style.maxHeight == "0px"){
+            menuList.style.maxHeight = "150px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
