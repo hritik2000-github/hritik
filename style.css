@@ -426,7 +426,7 @@ footer span a:hover{
     .txt1{
         
         margin-left: 75px;
-        margin-top: 380px;
+        margin-top: 220px;
         background: none;
         color: white;
        
@@ -437,20 +437,20 @@ footer span a:hover{
     }
     .txt2{
         margin-left: 15px;
-        margin-top: 430px;
+        margin-top: 270px;
     }
     .txt2 h1{
         font-size: 30px;
     }
     .txt3{
         margin-left: 15px;
-        margin-top: 470px;
+        margin-top: 310px;
     }
     .txt3 p{
         font-size:10px;
     }
     .btn{
-        margin-top: 550px;
+        margin-top: 370px;
         margin-left: 50px;
     }
    .aboutme{
