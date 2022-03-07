@@ -201,7 +201,7 @@ background: black;
     width: 100%;
     margin-bottom: 100px;
     background: black;
-    height: 70vh;
+    
 }
 
 .skills h2{
@@ -389,9 +389,15 @@ footer span a:hover{
 }
 
 @media only screen and (max-width:700px) {
-    .navbar{
+    *{
+       
+        background: black;
+    }
+        .navbar{
+            background: orange;
         width: 100%;
     }
+   
     nav ul{
         margin-top: 0;
         width:100%;
@@ -402,9 +408,13 @@ footer span a:hover{
         background: orange;
     }
     nav ul li{
+        background: orange;
         display: block;
         margin-top: 0px;
         margin-bottom: 0px;
+    }
+    nav ul li a{
+        background: orange;
     }
     .menu-icon{
         display: block;
@@ -417,11 +427,13 @@ footer span a:hover{
         
         margin-left: 75px;
         margin-top: 380px;
+        background: none;
         color: white;
        
     }
     .txt1 h3{
         font-size: 25px;
+        background: none;        
     }
     .txt2{
         margin-left: 15px;
@@ -447,16 +459,22 @@ footer span a:hover{
    }
     .aboutme h2{
         padding: 0px 0px;
+        padding: 0px 0px;
         margin-left: 80px;
-        margin-bottom: 30px;
+
+        margin-bottom: 20px;
         font-size: 35px;
     }
    
     .aboutme h2::after{
-       
+       display: none;
         bottom: -10px;
         left: 30%;
         
+    }
+    .skills{
+        width: 80%;
+        height: max-content;
     }
 
    .aboutme .left{
@@ -465,15 +483,16 @@ footer span a:hover{
    .aboutme .right{
        width: 100%;
    }
-    .left img{
-        margin-top: 0px;
-        height:fit-content;
-        width: 100%;
-    }
-   .right p{
-     margin-left: 0px;
-     margin-top: 10px;
-     
+   .left img{
+    margin-top: 50px;
+    height: 0vh;
+    width: 0px;
+    border: 5px solid orangered;
+    background: white;
+}
+    
+   .skills{
+       height: max-content;
    }
    .skills h2{
        padding: 0px 0px;
@@ -482,6 +501,7 @@ footer span a:hover{
        margin-bottom: 30px;
    }
    .skills h2::after{
+       display: none;
        bottom: -780px;
        left: 38%;
    }
@@ -496,10 +516,21 @@ footer span a:hover{
        margin-bottom: 50px;
    }
    .contact h2::after{
+       display: none;
        bottom: -1500px;
        left: 36%;
    }
+  
+   .contact .column form .field input,
+.contact .column form .textarea textarea{
+ background: #fff;
+}
+.contact .column form .field input:focus,
+.contact .column form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
     #menuList{
+        
         overflow: hidden;
         transition: 0.5s;
     }
@@ -514,9 +545,14 @@ footer span a:hover{
 
 
 
-@media only screen and (max-width:800px) {
-    .navbar{
-        width: 100%;
+@media only screen and (max-width:1000px) {
+    *{
+       
+        background: black;
+    }
+        .navbar{
+            background: orange;
+        width: 50%;
     }
     nav ul{
         margin-top: 0;
@@ -528,63 +564,81 @@ footer span a:hover{
         background: orange;
     }
     nav ul li{
+        background: orange;
         display: block;
         margin-top: 0px;
         margin-bottom: 0px;
+        
+    }
+    nav ul li a{
+        background: orange;
     }
     .menu-icon{
         display: block;
     }
     .cont img{
-        height: 50vh;
-        width: 100%;
+        height: 30vh;
+        width: 60%;
     }
     .txt1{
         
         margin-left: 75px;
         margin-top: 380px;
+        background: none;
         color: white;
        
     }
     .txt1 h3{
         font-size: 25px;
+        background: none;        
     }
     .txt2{
         margin-left: 15px;
         margin-top: 430px;
+        background: none;
     }
     .txt2 h1{
         font-size: 30px;
+        background: none;
+    }
+    .txt2 h1 span{
+        background:none;
     }
     .txt3{
         margin-left: 15px;
         margin-top: 470px;
+        background: none;
     }
     .txt3 p{
         font-size:10px;
+        background: none;
     }
     .btn{
         margin-top: 550px;
-        margin-left: 0px;
-        
+        margin-left: 50px;
     }
    .aboutme{
-      
-       height: 100vh;
+       margin-top: 10px;
+       
    }
     .aboutme h2{
         padding: 0px 0px;
-        margin-left: 200px;
-        margin-bottom: 0px;
-        font-size: 35px;
-       margin-top: 550px;
+        padding: 0px 0px;
+        margin-left: 80px;
+
+        margin-bottom: 20px;
+        font-size: 25px;
     }
    
     .aboutme h2::after{
-       
-        bottom: 500px;
-        left: 33%;
+       display: none;
+        bottom: -10px;
+        left: 30%;
         
+    }
+    .skills{
+        width: 80%;
+        height: max-content;
     }
 
    .aboutme .left{
@@ -595,27 +649,24 @@ footer span a:hover{
    }
     .left img{
         margin-top: 0px;
-        height:20vh;
-        width: 60%;
-        margin-left: 120px;
+        height:25vh;
+        width: 50%;
+        margin-left: 100px;
     }
-   .right p{
-       margin-top: 0px;
-       margin-left: 10px;
+    
+   .skills{
+       height: max-content;
    }
-   
    .skills h2{
        padding: 0px 0px;
-       margin-left: 250px;
-       font-size: 35px;
+       margin-left: 100px;
+       font-size: 25px;
        margin-bottom: 30px;
    }
    .skills h2::after{
-       bottom: -550px;
+       display: none;
+       bottom: -780px;
        left: 38%;
-   }
-   .skills{
-       height: 25vh;
    }
    .column form .button-area button{
        margin-left: 20px;
@@ -623,15 +674,26 @@ footer span a:hover{
    }
    .contact h2{
        padding: 0px 0px;
-       font-size: 35px;
-       margin-left: 200px;
+       font-size: 25px;
+       margin-left: 80px;
        margin-bottom: 50px;
    }
    .contact h2::after{
-       bottom: -1120px;
-       left: 35%;
+       display: none;
+       bottom: -1500px;
+       left: 36%;
    }
+  
+   .contact .column form .field input,
+.contact .column form .textarea textarea{
+ background: #fff;
+}
+.contact .column form .field input:focus,
+.contact .column form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
     #menuList{
+        
         overflow: hidden;
         transition: 0.5s;
     }
